@@ -1,36 +1,32 @@
 
-# 물류센터 
-
-
-#### 🔥Member
+# 물류센터 불량 패킹 검출 프로그램 구축
+***
+#### 👨🏿‍🤝‍👨🏿Member
 [김재현](https://github.com/jh941213) | [이성연](https://github.com/deepshadow25)
----- | ---- | 
- |  | 
-
-				
+:-: | :-: | 
+<img src="https://user-images.githubusercontent.com/115054681/214764862-b2a12ce8-50e6-46bb-b020-db979ebe8713.jpg" width="100" height="100"/>|<img src="https://user-images.githubusercontent.com/115054681/214764898-9d3809a4-b20d-48f6-b911-b9521355fc51.png" width="100" height="100">
+***				
 ## Index
 
-🏅Project Summary 
+### Main Project
 
-🗓Procedures
+- [📝Project Summary](#project-summary)
+- [🗓Procedures](#procedures)
+- [👨‍👩‍👧‍👧Team Roles](#team-roles)
+- [❄Features](#features)
+- [🏁Result](#result)
+- [🤍Conclusion](#conclusion)
 
-👨‍👩‍👧‍👧Team Roles
-
-🌿Features
-
-📊Result
-
-👨‍💻Conclusion
-
-💻Requirements
-
-Appendix Folder Structure
+### [Appendix](#appendix)
+- [♟Requirements](#requirements)
+- [📁Folder Structure](#folder-structure)
 
 
+### Main Project
 
-### 🏅Project Summary
+#### 📝Project Summary
 
-#### 프로젝트 주제
+프로젝트 주제
 
 
 - 개요 및 기대효과
@@ -60,24 +56,25 @@ Annotation file
 images :
 
 
+#### 🗓Procedures
 
-👩‍👩‍👧‍👦Team Roles
-김재현 : 
-이성연 : 
+#### 👨‍👩‍👧‍👧Team Roles
 
-🗃️Procedures
-
-🌿Features
+| 김재현 | Data Processing, Model testing, OCR Modeling, Model web serving |
+| ----- | --- |
+| 이성연 | Data Processing,  Model testing, Reference Searching and studying |
 
 
-📊Result
+#### ❄Features
+
+
+#### 🏁Result
 
 
 데이터 전처리
 
 			
 모델 개요
-큰 BackBone 구조의 Object Detection Model들이 학습을 잘하고 데이터가 가지고 있는 문제를 해결하기 어려워 앙상블을 통해 성능 향상을 목표 Cascade, Yolo, UniverseNet 학습에 사용 학습한 모델들의 Confusion Matrix를 시각화하고 이를 바탕으로 모델별로 가중치를 결정하고 Weight Box Fusion을 통해서 앙상블
 
 
 시연결과
@@ -88,16 +85,19 @@ Confusion Matrix
 Metric : mAP50
 
 
-👨‍💻Conclusion
+#### 🤍Conclusion
+
 잘한 점들
 
 아쉬운 점들
 
 프로젝트를 통해 배운점
 
-💻Requirements
+### Appendix
 
-🏗️Folder Structure
+#### ♟Requirements
+
+#### 📁Folder Structure
 ├── mmdetection  
 │     ├── ResNet152  
 │     ├── ResNest200  
