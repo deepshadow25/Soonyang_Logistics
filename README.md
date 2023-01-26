@@ -81,13 +81,12 @@ images :
 
 
 #### 👨‍👩‍👧‍👧Team Roles
-
- Member | Role |
- '-' | '-' |
+***
+| Member | Role |
+| ---- | ---- |
 | 김재현 | Data Processing, Model testing, OCR Modeling, Model web serving |
-| '-' | '-' |
 | 이성연 | Data Processing,  Model testing, Reference Searching and studying |
-
+***
 
 #### ❄Features
 
@@ -122,6 +121,8 @@ Metric : mAP50
 #### ♟Requirements
 
 #### 📁Folder Structure
+---
+```
 ├── Model
 │     ├── Yolo  ├── v4
 │     │		├── v7
@@ -140,4 +141,5 @@ Metric : mAP50
 │     ├── 
 │     ├── 
 │     └── 
-
+```
+---
