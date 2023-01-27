@@ -86,8 +86,8 @@ images :
 ***
 | Member | Role |
 | ---- | ---- |
-| 김재현 | Data Processing, Model testing, OCR Modeling, Model web serving |
-| 이성연 | Data Processing,  Model testing, Reference Searching and studying |
+| 김재현 | Data Processing, Model testing (Yolo v7, v8), OCR Modeling, Model web serving |
+| 이성연 | Data Processing,  Model testing (Yolo v4, EfficientDet, RetinaNet), Reference Searching and studying |
 ***
 
 #### ❄Features
