@@ -32,10 +32,18 @@
 - 데이터 셋의 구조도
 
 데이터셋 통계
+
+1. 상자 데이터
 - 전체 이미지 개수 : 3,011장
 - 2 class : Hole, Wet
 - 이미지 크기 : (640, 640) -> (1280, 1280)
 - 데이터셋 형태 : 택배 상자 (갈색 판지)
+
+2. 택배송장 데이터
+- 전체 송장 개수 : 187장
+GS 편의점 송장 80장
+CU 편의점 송장 106장
+시험데이터 추가 1장 (실제 송장으로 ocr 테스트)
 
 Annotation file
 
@@ -68,26 +76,46 @@ images :
 ><br>
 >
 >**[2023.01.17 ~ 2023.01.24]**
->- 1차 Model result 분석, 평가
+>- 1차 Anomaly Detection model result 분석, 평가
 >  - Annotating 대폭 수정 
 >- OCR / Model serving Reference Searching 시작
 >  - App service 계획이 있었으나 차후로 미룸.
 ><br>
 >
->**[2023.01.25 ~ 2023..]**  
->- 2차 Model training and testing
+>**[2023.01.25 ~ 2023.01.27]**  
+>- 2차 Detection Model training and testing
 >  - 수정된 Annotating 적용
 >  - Resolution 조정 (640*640 -> 1280*1280)
+>  - 결과 분석, 평가 후 3차로 넘어감
 >- Github repository 결과물 정리
 >  - Readme 작성
-
+><br>
+>**[2023.01.28 ~ 2023.02.06]**  
+>- OCR model 준비
+>  - 택배 운송장 데이터 준비 (임의의 주소데이터 생성, 송장 인쇄)
+>  - OCR API test (Google Cloud Vision, Naver Clova)
+>  - OCR model searching (EazyOCR, Tesseract 등)
+>- 3차 Detection model training and testing
+>  - use EfficientDet models. (D0, D1)
+>  - also used Yolo models : Yolo가 Eff.Det보다 나음 확인
+>- App 구현 계획을 Web Serving으로 수정. (Insight 다시보기)
+>  - 고객에게 알림을 발송하는 기능이 필요없음.
+>  - 물류회사(공장) 내부에서만 사용하는 프로그램으로 사용 : 웹으로만 구현해도 됨.
+><br>
+>**[2023.02.07 ~ 2023.02.]
+>- Presentation 준비
+>  - Data, Model, OCR, Git, any other process 정리
+>  - 발표 대본 제작, 디자인 구상
+><br>
+>**[2023.02.17]
+>- 중간발표 및 점검.
 
 #### 👨‍👩‍👧‍👧Team Roles
 ***
 | Member | Role |
 | ---- | ---- |
-| 김재현 | Data Processing, Model testing (Yolo v7, v8), OCR Modeling, Model web serving |
-| 이성연 | Data Processing,  Model testing (Yolo v4, EfficientDet, RetinaNet), Reference Searching and studying |
+| 김재현 | Data Processing(Anomaly Box Data), Model testing (Yolo v7, v8), OCR Modeling, Model web serving, Making Presentation File |
+| 이성연 | Data Processing(Anomaly Box Data, WayBill Data), Model testing (Yolo v4, EfficientDet), Reference Searching and studying, Presentation |
 ***
 
 #### ❄Features
@@ -127,16 +155,21 @@ Metric : mAP50
 ```
 ├── Model
 │     ├── Yolo  ├── v4
+│     │		├── v5
 │     │		├── v7
 │     │		└── v8
-│     ├── EfficientDet 
-│     └── RetinaNet
+│     ├── CoreML (yolo v2, v3 based)
+│     └── EfficientDet ├── D0
+│     		       └── D1
 │  
 ├── Dataset
-│     └──   
+│     ├── Anomaly Box ├── Wet 2305
+│     │		      └── Hole 2231
+│     └── Waybill ├── CU 106
+│     	          └── GS 80
 │ 
 ├── Serving  
-│     └── YOLOv7x  
+│     └── YOLOv8s  
 │   
 ├── OCR  
 │     ├── 
