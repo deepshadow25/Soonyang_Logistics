@@ -70,50 +70,50 @@
 >
 >**[2023.01.06 ~ 2023.01.18]**
 >- 데이터 수집 및 전처리
->  - Anomaly Detection 특성상 불량데이터를 구하기 어려웠으므로 이를 직접 만들어냄.
->  - 가장 보편적인 택배 상자(갈색 판지 상자)의 데이터만을 고려
+>   - Anomaly Detection 특성상 불량데이터를 구하기 어려웠으므로 이를 직접 만들어냄.
+>   - 가장 보편적인 택배 상자(갈색 판지 상자)의 데이터만을 고려
 ><br>
 >
 >**[2023.01.14 ~ 2023.01.16]**
 >- 1차 Model training and testing
->  - Real Time & Anomaly Detection
->  - Train, valid dataset split
->  - Data Augmentation
+>   - Real Time & Anomaly Detection
+>   - Train, valid dataset split
+>   - Data Augmentation
 ><br>
 >
 >**[2023.01.17 ~ 2023.01.24]**
 >- 1차 Anomaly Detection model result 분석, 평가
->  - Annotating 대폭 수정 
+>   - Annotating 대폭 수정 
 >- OCR / Model serving Reference Searching 시작
->  - App service 계획이 있었으나 차후로 미룸.
+>   - App service 계획이 있었으나 차후로 미룸.
 ><br>
 >
 >**[2023.01.25 ~ 2023.01.27]**  
 >- 2차 Detection Model training and testing
->  - 수정된 Annotating 적용
->  - Resolution 조정 (640*640 -> 1280*1280)
->  - 결과 분석, 평가 후 3차로 넘어감
+>   - 수정된 Annotating 적용
+>   - Resolution 조정 (640*640 -> 1280*1280)
+>   - 결과 분석, 평가 후 3차로 넘어감
 >- Github repository 결과물 정리
->  - Readme 작성
+>   - Readme 작성 시작
 ><br>
 >
 >**[2023.01.28 ~ 2023.02.06]**  
 >- OCR model 준비
->  - 택배 운송장 데이터 준비 (임의의 주소데이터 생성, 송장 인쇄)
->  - OCR API test (Google Cloud Vision, Naver Clova)
->  - OCR model searching (EazyOCR, Tesseract 등)
+>   - 택배 운송장 데이터 준비 (임의의 주소데이터 생성, 송장 인쇄)
+>   - OCR API test (Google Cloud Vision, Naver Clova)
+>   - OCR model searching (EazyOCR, Tesseract 등)
 >- 3차 Detection model training and testing
->  - use EfficientDet models. (D0, D1)
->  - also used Yolo models : Yolo가 Eff.Det보다 나음 확인
+>   - use EfficientDet models. (D0, D1)
+>   - also used Yolo models : Yolo가 Eff.Det보다 나음 확인
 >- App 구현 계획을 Web Serving으로 수정. (Insight 다시보기)
->  - 고객에게 알림을 발송하는 기능이 필요없음.
->  - 물류회사(공장) 내부에서만 사용하는 프로그램으로 사용 : 웹으로만 구현해도 됨.
+>   - 고객에게 알림을 발송하는 기능이 필요없음.
+>   - 물류회사(공장) 내부에서만 사용하는 프로그램으로 사용 : 웹으로만 구현해도 됨.
 ><br>
 >
 >**[2023.02.07 ~ 2023.02.]**
 >- Presentation 준비
->  - Data, Model, OCR, Git, any other process 정리
->  - 발표 대본 제작, 디자인 구상
+>   - Data, Model, OCR, Git, any other process 정리
+>   - 발표 대본 제작, 디자인 구상
 ><br>
 >
 >**[2023.02.17]**
