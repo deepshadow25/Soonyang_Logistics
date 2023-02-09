@@ -1,0 +1,19 @@
+#background{
+    background-image: url("static\images\syWpJYC.png");
+    background-repeat: repeat-x;    
+    height:auto;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+button.btn1 {
+    position: relative;
+    top:25%;
+    left:25%
+    }
+button.btn2 {
+    position: relative;
+    top:25%;
+    left:45% 
+    }
