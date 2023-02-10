@@ -1,0 +1,14 @@
+.background{
+    background-image: url('../images/syWpJYC.png');
+    min-height: 640px;
+    min-width: 100%;
+
+    display:flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
