@@ -1,0 +1,14 @@
+.cbg {
+    background-color: #97303C;
+
+}
+
+.cbg .button{
+    position: absolute;
+    background-color: #fff;
+    color: #993333;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px
+    }
