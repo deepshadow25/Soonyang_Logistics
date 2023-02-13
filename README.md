@@ -110,10 +110,24 @@
 >   - 물류회사(공장) 내부에서만 사용하는 프로그램으로 사용 : 웹으로만 구현해도 됨.
 ><br>
 >
->**[2023.02.07 ~ 2023.02.]**
+>**[2023.02.07 ~ 2023.02.13]**
+>- Web Serving 구축 (Flask)
+>  - 실시간 구축 웹 사이트 구현
+>  - 웹 UI 제작 (불량검출 : 검출하는 것 보여주기 / 송장인식 : OCR bbox 저장+crop)
+>- OCR Data train + inference 시작
+>  - Tesseract, Naver Clova API, EazyOCR 등 사용
+>  - 송장 사진 100여 장에서 각 숫자 + "운송장번호" 글자에 bounding box 지정, inference
+>    - Yolo v8 기반으로 모델 만들기 도전. 20,000 Epoch 시도.
+><br>
+>
+>**[2023.02.13 ~ 2023.02.16]**
 >- Presentation 준비
 >   - Data, Model, OCR, Git, any other process 정리
 >   - 발표 대본 제작, 디자인 구상
+>- DB 구축
+>
+>- OCR 수정
+>
 ><br>
 >
 >**[2023.02.17]**
