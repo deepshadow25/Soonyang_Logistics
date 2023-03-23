@@ -30,6 +30,7 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
 - ### [Appendix](#appendix)
 - [♟Requirements](#requirements)
 - [📁Folder Structure](#folder-structure)
+- [🧾Reference](#
 ***
 ### Main Project
 ***
@@ -72,8 +73,6 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
 
 
 #### 🗓Procedures
-
-[timetable](https://timetreeapp.com/calendars/Bs7yrwhD6Q5H)
 
 >**[2023.01.02 ~ 2023.01.06]**
 >- 프로젝트 주제 탐색 및 선정
@@ -181,35 +180,97 @@ Metric : mAP50
 
 프로젝트를 통해 배운점
 
-### Appendix
+## Appendix
 
-#### ♟Requirements
+### ♟Requirements
 
-#### 📁Folder Structure
+#### Yolov5
+```Python
+# pip install -r requrements.txt
+gitpython
+ipython  # interactive notebook
+matplotlib>=3.2.2
+numpy>=1.18.5
+opencv-python>=4.1.1
+Pillow>=7.1.2
+psutil  # system resources
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+thop>=0.1.1  # FLOPs computation
+torch>=1.7.0  # see https://pytorch.org/get-started/locally (recommended)
+torchvision>=0.8.1
+tqdm>=4.64.0
+# protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
+```
+
+#### Yolov7
+```Python
+# pip install -r requrements.txt
+matplotlib>=3.2.2
+numpy>=1.18.5,<1.24.0
+opencv-python>=4.1.1
+Pillow>=7.1.2
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+torch>=1.7.0,!=1.12.0
+torchvision>=0.8.1,!=0.13.0
+tqdm>=4.41.0
+protobuf<4.21.3
+```
+
+#### Yolov8
+```Python
+# pip install Ultralytics
+pip install -r requrements.txt
+matplotlib>=3.2.2
+numpy>=1.18.5
+opencv-python>=4.6.0
+Pillow>=7.1.2
+PyYAML>=5.3.1
+requests>=2.23.0
+scipy>=1.4.1
+torch>=1.7.0
+torchvision>=0.8.1
+tqdm>=4.64.0
+```
+
+### 📁Folder Structure
 ---
 ```
-├── Model
-│     ├── Yolo  ├── v4
+├── BoxDetection
+│     ├── Yolo  ┬── v4 (DarkNet)
 │     │		├── v5
 │     │		├── v7
 │     │		└── v8
 │     ├── CoreML (yolo v2, v3 based)
-│     └── EfficientDet ├── D0
+│     └── EfficientDet ┬── D0
 │     		       └── D1
 │  
-├── Dataset
-│     ├──  Box ├── Wet 2305
-│     │	       └── Hole 2231
-│     └── Waybill ├── CU 106
-│     	          └── GS 80
+├── TrackingDetection
+│     └── Yolov8
+|
 │ 
 ├── Serving  
 │     └── YOLOv8s  
 │   
-├── OCR  
-│     ├── 
-│     ├── 
-│     ├── 
-│     └── 
+├── OCR (Optical Character Recognition)
+│     ├── EazyOCR
+│     ├── TesseractOCR
+│     ├── mmOCR
+|     ├── Naver Clova A.I.
+|     ├── Google Cloud Vision
+│     └── Kakao
+|
+|
+└─── Dataset
+      ├─── train.txt
+      ├─── valid.txt
+      └─── test.txt
 ```
 ---
+
+### Reference
+
+
