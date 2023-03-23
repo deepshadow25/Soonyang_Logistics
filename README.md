@@ -47,11 +47,13 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
 + 상자 데이터
   + 라벨 : Hole(구멍, 찢어짐), Wet(젖음)
     + 1단계 : 웹 크롤링 을 통하여 데이터 수집 (987장)
-    ![](https://user-images.githubusercontent.com/112835087/220042612-52484d5e-66b8-4cf8-8e41-ec2dcde76775.png)
+    <img src="https://user-images.githubusercontent.com/112835087/220042612-52484d5e-66b8-4cf8-8e41-ec2dcde76775.png" width="640" height='320'>
+    
     + 2단계 : 웹 크롤링 계속 + 자체적인 길거리 탐색 데이터 수집 (1684장)
-    ![]()
+    <img src='https://user-images.githubusercontent.com/115054681/227116023-e81d1ddc-c191-4442-8ee2-48b751ccee51.jpg' width='320' height='480'>
+    
     + 3단계 : 갈색박스 상자 구매후 자체적인 데이터셋 제작 (3011장)
-    ![](https://user-images.githubusercontent.com/112835087/220042859-f769a323-bf14-4b64-b198-412931588292.png)
+    <img src='https://user-images.githubusercontent.com/112835087/220042859-f769a323-bf14-4b64-b198-412931588292.png' width='640' height='320'>
   + 전체 이미지 개수 : 3,011장
   + 2 class : Hole, Wet
   + 이미지 크기 : (640, 640) -> (1280, 1280)
