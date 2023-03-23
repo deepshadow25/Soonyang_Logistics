@@ -20,8 +20,8 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
 
 ***				
 ## Index
-- ### [Main Project](#main-project)
 - [📝Project Summary](#project-summary)
+- [🗂 Dataset Summary](#dataset-summary)
 - [🗓Procedures](#procedures)
 - [👨‍👩‍👧‍👧Team Roles](#team-roles)
 - [❄Features](#features)
@@ -30,11 +30,10 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
 - ### [Appendix](#appendix)
 - [♟Requirements](#requirements)
 - [📁Folder Structure](#folder-structure)
-- [🧾Reference](#
+- [🧾Reference](#reference)
 ***
-### Main Project
-***
-#### 📝Project Summary
+ 
+## 📝Project Summary
 프로젝트 주제
 - 개요 및 기대효과
   - 물류센터(HUB, CAMP) 내 컨베이어 벨트에서 박스 포장의 찢어지거나 젖음 등을 Detection 하여 재포장이 필요한 경우를 선별하는 프로그램 구현
@@ -42,6 +41,7 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
   - 오토소터같은 기존 분류 시스템에 비해 저렴한 비용으로 시스템 구축을 할 수 있을 것으로 기대됨
   - 오상차 오배송에 대한 데이터 축적으로 내부 프로세스 평가 반영을 할 수 있으며 이를 바탕으로 고객 경험 향상 효과도 기대되는 만큼, B2B, B2C 관점 모두에서 인적, 경제적인 이득을 볼 수 있을 것으로 기대된다.
 
+### Dataset Summary
 
 데이터셋 통계
 
@@ -72,7 +72,7 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
 + images :
 
 
-#### 🗓Procedures
+## 🗓Procedures
 
 >**[2023.01.02 ~ 2023.01.06]**
 >- 프로젝트 주제 탐색 및 선정
