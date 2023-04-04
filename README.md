@@ -26,7 +26,6 @@ MOBILE | Iphone 13 Mini | Galaxy S10 | - |-
 - [👨‍👩‍👧‍👧Team Roles](#team-roles)
 - [❄Features](#features)
 - [🏁Result](#result)
-- [🤍Conclusion](#conclusion)
 - ### [Appendix](#appendix)
 - [♟Requirements](#requirements)
 - [📁Folder Structure](#folder-structure)
@@ -84,11 +83,11 @@ image size & resize <br>
 --> yolov7 논문 참조시 데이터셋 640 x 640 학습 추후 데이터 핸들링을 통하여 resize 작업 진행
 
 Augmentation <br>
-crop 10° -> 데이터 증강을 위한 Agumentation <br>
-yolov7, yolov8 hyper param 기능 agumentation: True <br>
+crop 10° -> 데이터 증강을 위한 Augmentation <br>
+yolov7, yolov8 hyper param 기능 augmentation: True <br>
 (Mosaic : 1.0, fliplr : 0.5, scale : 0.5, translate : 0.1, hsv_h : 0.015, hsv_s = 0.7, hsv_v = 0.4)
 
-
+#### OpenCV를 활용한 송장데이터 전처리 
 
 ## 🗓Procedures
 
@@ -178,6 +177,9 @@ yolov7, yolov8 hyper param 기능 agumentation: True <br>
 * NAVER Clova AI, KAKAO 등 국내 기업의 OCR API 사용
 
 
+## Model Web Serving
+
+
 ## 🏁Result
 
 ### Valid Result
@@ -189,7 +191,7 @@ yolov7, yolov8 hyper param 기능 agumentation: True <br>
 | epochs(best) | 3200 | 6000 | 100(78) | 100(83) | 100(87) | 10000(9752) |
 | data | 3단계 | 2단계 | 3단계 | 3단계 | 3단계 | 3단계 |
 | mAP50 | 0.78 | 0.57 | 0.81, 0.85 | 0.45 | 0.81,0.86 | 0.79 |
-| augmentation | crop 10 | crop10 | crop10, hyper params |crop10, hyper params | crop10, hyper params |
+| augmentation | crop 10 | crop10 | crop10, hyper params | crop10, hyper params | crop10, hyper params |
 
 <img src="https://user-images.githubusercontent.com/112835087/219592154-6165df04-bad7-4c72-bc9a-3a1802e81278.png" width=640, height=360>
 
